@@ -1,0 +1,94 @@
+{
+  "raw_rows_after_url_dedupe": 235370,
+  "feature_rows": 219033,
+  "class_balance": {
+    "Legitimate": 134792,
+    "Phishing": 84241
+  },
+  "unique_registered_domains": 175444,
+  "url_shape_by_class": {
+    "Legitimate": {
+      "n": 134850,
+      "starts_https": 1.0,
+      "starts_https_www": 1.0,
+      "has_path": 0.0,
+      "has_query": 0.0,
+      "trailing_slash": 0.0,
+      "median_url_length": 27.0
+    },
+    "Phishing": {
+      "n": 100520,
+      "starts_https": 0.486,
+      "starts_https_www": 0.024,
+      "has_path": 0.271,
+      "has_query": 0.061,
+      "trailing_slash": 0.363,
+      "median_url_length": 34.0
+    }
+  },
+  "top_phishing_registered_domains": {
+    "web.app": 5527,
+    "firebaseapp.com": 5418,
+    "repl.co": 3498,
+    "weeblysite.com": 2889,
+    "workers.dev": 1317,
+    "square.site": 1023,
+    "xsph.ru": 927,
+    "dweb.link": 768,
+    "pantheonsite.io": 735,
+    "godaddysites.com": 731,
+    "duckdns.org": 559,
+    "weebly.com": 533,
+    "webwave.dev": 520,
+    "glitch.me": 468,
+    "wixsite.com": 451
+  },
+  "top_tlds_by_class": {
+    "Legitimate": {
+      "com": 68748,
+      "org": 16519,
+      "other": 16184,
+      "uk": 6072,
+      "net": 3996,
+      "de": 3310,
+      "au": 2605,
+      "jp": 2082,
+      "edu": 1856,
+      "it": 1668
+    },
+    "Phishing": {
+      "com": 37320,
+      "other": 11764,
+      "app": 6047,
+      "co": 4182,
+      "net": 2738,
+      "ru": 2499,
+      "org": 2088,
+      "dev": 2070,
+      "top": 1960,
+      "io": 1789
+    }
+  },
+  "feature_means_by_class": {
+    "Legitimate": {
+      "host_length": 15.23,
+      "num_subdomains": 0.031,
+      "num_hyphens": 0.083,
+      "num_digits": 0.051,
+      "host_entropy": 3.304,
+      "is_free_hosting": 0.0,
+      "num_suspicious_keywords": 0.013,
+      "brand_in_subdomain": 0.002
+    },
+    "Phishing": {
+      "host_length": 23.21,
+      "num_subdomains": 0.718,
+      "num_hyphens": 0.567,
+      "num_digits": 2.054,
+      "host_entropy": 3.607,
+      "is_free_hosting": 0.325,
+      "num_suspicious_keywords": 0.112,
+      "brand_in_subdomain": 0.061
+    }
+  }
+}
