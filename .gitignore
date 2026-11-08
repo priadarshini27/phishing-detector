@@ -8,3 +8,4 @@ venv/
 .streamlit/secrets.toml
 doc/PROJECT_DOCUMENTATION.md
 doc/TEAM_SETUP_GUIDE.md
+doc/TEAM_GIT_GUIDE.md
