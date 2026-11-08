@@ -7,3 +7,4 @@ __pycache__/
 venv/
 .streamlit/secrets.toml
 doc/PROJECT_DOCUMENTATION.md
+doc/TEAM_SETUP_GUIDE.md
