@@ -1,0 +1,9 @@
+data/PhiUSIIL_Phishing_URL_Dataset.csv
+data/features.csv
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.streamlit/secrets.toml
+doc/PROJECT_DOCUMENTATION.md
