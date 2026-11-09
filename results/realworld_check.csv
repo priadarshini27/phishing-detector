@@ -1,0 +1,24 @@
+url,note,expected,p_phishing,model_verdict,app_verdict,allowlisted,model_correct,top_reason
+https://www.google.com,homepage,legit,0.253,legit,legit,True,True,0 subdomain level(s) (typical legit site: 0)
+https://github.com/scikit-learn/scikit-learn/issues,deep link,legit,0.264,legit,legit,True,True,0 subdomain level(s) (typical legit site: 0)
+https://en.wikipedia.org/wiki/Phishing,subdomain + deep link,legit,0.751,phishing,legit,True,False,1 subdomain level(s) (typical legit site: 0)
+https://accounts.google.com/signin,subdomain with login path,legit,0.903,phishing,legit,True,False,1 subdomain level(s) (typical legit site: 0)
+https://docs.python.org/3/library/urllib.parse.html,subdomain + deep link,legit,0.811,phishing,legit,True,False,1 subdomain level(s) (typical legit site: 0)
+https://www.amazon.co.uk/dp/B08N5WRWNW,multi-part suffix,legit,0.114,legit,legit,True,True,Top-level domain .uk lowers the risk
+https://mail.yahoo.co.jp,subdomain + multi-part suffix,legit,0.215,legit,legit,True,True,1 subdomain level(s) (typical legit site: 0)
+https://www.bbc.co.uk/news/technology,news deep link,legit,0.033,legit,legit,True,True,Top-level domain .uk lowers the risk
+https://stackoverflow.com/questions/tagged/python,deep link,legit,0.177,legit,legit,True,True,0 subdomain level(s) (typical legit site: 0)
+http://example.org,plain http homepage,legit,0.087,legit,legit,False,True,Top-level domain .org lowers the risk
+https://www.uni-mainz.de,university,legit,0.23,legit,legit,False,True,Top-level domain .de lowers the risk
+https://archive.ics.uci.edu/dataset/967,academic subdomain,legit,0.114,legit,legit,True,True,Top-level domain .edu lowers the risk
+http://secure-paypal-login.verify-account.xyz/@signin,brand + keywords + odd tld,phishing,0.984,phishing,phishing,False,True,1 subdomain level(s) (typical legit site: 0)
+https://emerald-exch-0utlook.firebaseapp.com/,free hosting + leet brand,phishing,1.0,phishing,phishing,False,True,Hosted on a free hosting / site-builder platform (firebaseapp.com)
+http://192.168.4.20/bank/login.php,ip host,phishing,0.995,phishing,phishing,False,True,Digits make up 75% of the hostname
+https://appleid-verify-account.top/session,brand + keyword + top tld,phishing,0.924,phishing,phishing,False,True,"Hostname contains sensitive words: verify, account"
+https://netflix-billing-update.weeblysite.com,free hosting + brand,phishing,1.0,phishing,phishing,False,True,1 subdomain level(s) (typical legit site: 0)
+http://paypal.com@evil-site.ru/confirm,userinfo trick,phishing,0.425,legit,phishing,False,False,1 hyphen(s) in the hostname (typical legit site: 0)
+https://wallet-connect-airdrop.web.app,crypto lure on free hosting,phishing,1.0,phishing,phishing,False,True,1 subdomain level(s) (typical legit site: 0)
+https://a8f3k2kx9q.workers.dev/login,random subdomain on workers.dev,phishing,1.0,phishing,phishing,False,True,Hosted on a free hosting / site-builder platform (workers.dev)
+https://microsoft-office365-signin.repl.co,brand on repl.co,phishing,1.0,phishing,phishing,False,True,Hosted on a free hosting / site-builder platform (repl.co)
+https://cc04324.com,digit-heavy domain,phishing,0.985,phishing,phishing,False,True,Digits make up 45% of the hostname
+http://xn--pypal-4ve.com/login,punycode look-alike,phishing,0.811,phishing,phishing,False,True,3 hyphen(s) in the hostname (typical legit site: 0)

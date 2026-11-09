@@ -1,0 +1,24 @@
+url,expected_phishing,note
+https://www.google.com,0,homepage
+https://github.com/scikit-learn/scikit-learn/issues,0,deep link
+https://en.wikipedia.org/wiki/Phishing,0,subdomain + deep link
+https://accounts.google.com/signin,0,subdomain with login path
+https://docs.python.org/3/library/urllib.parse.html,0,subdomain + deep link
+https://www.amazon.co.uk/dp/B08N5WRWNW,0,multi-part suffix
+https://mail.yahoo.co.jp,0,subdomain + multi-part suffix
+https://www.bbc.co.uk/news/technology,0,news deep link
+https://stackoverflow.com/questions/tagged/python,0,deep link
+http://example.org,0,plain http homepage
+https://www.uni-mainz.de,0,university
+https://archive.ics.uci.edu/dataset/967,0,academic subdomain
+http://secure-paypal-login.verify-account.xyz/@signin,1,brand + keywords + odd tld
+https://emerald-exch-0utlook.firebaseapp.com/,1,free hosting + leet brand
+http://192.168.4.20/bank/login.php,1,ip host
+https://appleid-verify-account.top/session,1,brand + keyword + top tld
+https://netflix-billing-update.weeblysite.com,1,free hosting + brand
+http://paypal.com@evil-site.ru/confirm,1,userinfo trick
+https://wallet-connect-airdrop.web.app,1,crypto lure on free hosting
+https://a8f3k2kx9q.workers.dev/login,1,random subdomain on workers.dev
+https://microsoft-office365-signin.repl.co,1,brand on repl.co
+https://cc04324.com,1,digit-heavy domain
+http://xn--pypal-4ve.com/login,1,punycode look-alike
