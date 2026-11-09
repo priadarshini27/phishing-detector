@@ -1,0 +1,61 @@
+{
+  "note": "Same rows, same grouped split (registered domain), RF 150 trees, threshold 0.5. Row-level (one row per unique URL), so numbers differ slightly from metrics.json.",
+  "results": {
+    "hostname (production)": {
+      "accuracy": 0.8259,
+      "precision_phishing": 0.8482,
+      "recall_phishing": 0.6332,
+      "f1_phishing": 0.7251,
+      "roc_auc": 0.8465,
+      "n_features": 23
+    },
+    "full_url (doc features)": {
+      "accuracy": 0.996,
+      "precision_phishing": 0.999,
+      "recall_phishing": 0.9899,
+      "f1_phishing": 0.9945,
+      "roc_auc": 0.9977,
+      "n_features": 26
+    },
+    "dataset pre-extracted columns": {
+      "accuracy": 0.9999,
+      "precision_phishing": 1.0,
+      "recall_phishing": 0.9997,
+      "f1_phishing": 0.9999,
+      "roc_auc": 1.0,
+      "n_features": 22
+    }
+  },
+  "legit_deep_link_probe": [
+    {
+      "url": "https://github.com/scikit-learn/scikit-learn/issues",
+      "p_phishing_full_url_model": 1.0,
+      "p_phishing_hostname_model": 0.234
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Phishing",
+      "p_phishing_full_url_model": 0.995,
+      "p_phishing_hostname_model": 0.83
+    },
+    {
+      "url": "https://www.amazon.com/dp/B08N5WRWNW?ref=nav",
+      "p_phishing_full_url_model": 1.0,
+      "p_phishing_hostname_model": 0.243
+    },
+    {
+      "url": "https://docs.python.org/3/library/urllib.parse.html",
+      "p_phishing_full_url_model": 1.0,
+      "p_phishing_hostname_model": 0.891
+    },
+    {
+      "url": "http://www.example.org/",
+      "p_phishing_full_url_model": 1.0,
+      "p_phishing_hostname_model": 0.044
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/technology",
+      "p_phishing_full_url_model": 0.995,
+      "p_phishing_hostname_model": 0.002
+    }
+  ]
+}
